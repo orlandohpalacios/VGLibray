@@ -1,0 +1,44 @@
+﻿@model GameList;
+@{
+    ViewData["Title"] = "Collection";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="text-center">
+    <h1 class="display-4"> Game List
+        
+    </h1>
+    <h2>This is how many games in collection: </h2>
+
+     
+    @foreach(var gmodel in Model.Games)
+    {
+   
+        <img src=@gmodel.PhotoLink >
+        <br />
+            
+        <p> @gmodel.Name</p>
+        <br>
+        <p>  @gmodel.Rating</p>
+        <br>
+        <p> @gmodel.Platform</p>
+        <br>
+        <p> @gmodel.year</p>
+        <br>
+               @if(@gmodel.LoanPerson.Equals("")|| @gmodel.Date.Equals(""))
+            {
+            <p hidden>@gmodel.LoanPerson</p>
+            <p hidden>@gmodel.Date</p>
+            }else
+            {
+            <p> @gmodel.LoanPerson</p>
+            <p> @gmodel.Date</p>
+
+            }
+            <form asp-controller="Home" asp-action="Collection" method="post">
+            <input type="text" name="@gmodel.LoanPerson" placeholder="Your Name" />    <input type="submit"value="Loan?"/>
+            </form>
+    }
+
+</div>

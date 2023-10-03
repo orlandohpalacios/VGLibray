@@ -1,0 +1,67 @@
+﻿@model GameList;
+@{
+    ViewData["Title"] = "Collection";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="text-center">
+    <h1 class="display-4"> Game List
+        
+    </h1>
+    <div>
+    <div class="col-sm-4 m-sm-3">
+            <form asp-controller="Home" asp-action="SearchGame">
+                <h3>Search:</h3>
+                <input name="key" placeholder="Name" />
+                <button type="submit" class="btn btn-light">Search</button>
+            </form>
+        </div>
+        
+        <div class="col-sm-4 m-sm-3">
+            <form asp-controller="Home" asp-action="FilterGame">
+                <h3>Filter:</h3>
+                <input name="genre" placeholder="Genre" />
+                <input name="Platform" placeholder="Platform" />
+                <input name="Rating" placeholder="Rating" />
+                <button type="submit" class="btn btn-light">Search</button>
+            </form>
+        </div>
+        </div>
+    <h2>This is how many games in collection: @Model.Games.Count()</h2>
+    @{// below the Model.Games is not updated when add
+      }
+     
+    @foreach(var gmodel in Model.Games)
+    {
+   
+        <img src=@gmodel.PhotoLink >
+        <br />
+            
+        <p> @gmodel.Name</p>
+        <br>
+        <p>  @gmodel.Rating</p>
+        <br>
+        <p> @gmodel.Platform</p>
+        <br>
+        <p> @gmodel.year</p>
+        <br>
+               @if(@gmodel.LoanPerson.Equals("")|| @gmodel.Date.Equals(""))
+            {
+            <p hidden>@gmodel.LoanPerson</p>
+            <p hidden>@gmodel.Date</p>
+            }else
+            {
+            <p> @gmodel.LoanPerson</p>
+            <p> @gmodel.Date</p>
+
+            }
+
+            <a asp-action="DeleteGame" asp-controller="Home" asp-route-id="@gmodel.Id">fdelt</a>
+
+            <form asp-controller="Home" asp-action="Collection" method="post">
+            <input type="text" name="@gmodel.LoanPerson" placeholder="Your Name" />    <input type="submit"value="Loan?"/>
+            </form>
+    }
+
+</div>

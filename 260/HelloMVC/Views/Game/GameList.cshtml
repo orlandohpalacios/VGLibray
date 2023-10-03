@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    //layout = "_layout1" to change the layout for this page
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4"> Game List
+        
+    </h1>
+    <ol>
+    @for(var i =0; i<ViewBag.Games.Count;i++)
+    {
+        <li>
+            <a href="/Game/GameDetail/@ViewBag.Games[i].Id">
+                @ViewBag.Games[i].Name</a>
+            
+        </li>
+    }
+    </ol>
+</div>

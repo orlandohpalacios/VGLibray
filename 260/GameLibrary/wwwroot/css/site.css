@@ -1,0 +1,59 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+h1 {color:black;
+}
+h2 {
+    color: black;
+}
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+img {
+    width: 400px;
+    height: 300px;
+
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border:20px dashed;
+    max-width: 200px;
+    margin:auto;
+    background-color:white;
+    border-block-color:white;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url("https://th.bing.com/th/id/R.e6052aaa595a003a813e0686e2ac3e89?rik=C%2bKy0pAwGLavnA&pid=ImgRaw&r=0");
+    background-size: cover;
+}

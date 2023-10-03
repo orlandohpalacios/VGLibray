@@ -1,0 +1,20 @@
+﻿@model GameView;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Libary!</h1>
+
+
+
+         <form action"/Home/AddGame" method="post">
+            <input type="text" name="Name" placeholder="Name" />  
+            <input type="text" name="genre" placeholder="Genre" />  
+            <input type="text" name="Platform" placeholder="Platform" />  
+            <input type="text" name="Rating" placeholder="Rating" />  
+            <input type="text" name="Year" placeholder="Year" />  
+            <input type="submit"value="Add Game?"/>
+            </form>
+    
+</div>

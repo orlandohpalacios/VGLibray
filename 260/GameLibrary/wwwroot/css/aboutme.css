@@ -1,0 +1,29 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+body {
+    margin-bottom: 60px;
+    background-size: cover;
+}

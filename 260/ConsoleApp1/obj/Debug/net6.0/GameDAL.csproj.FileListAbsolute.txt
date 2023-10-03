@@ -1,0 +1,12 @@
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.csproj.AssemblyReference.cache
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.AssemblyInfoInputs.cache
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.AssemblyInfo.cs
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.csproj.CoreCompileInputs.cache
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\bin\Debug\net6.0\GameDAL.deps.json
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\bin\Debug\net6.0\GameDAL.dll
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\bin\Debug\net6.0\GameDAL.pdb
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.dll
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\refint\GameDAL.dll
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\GameDAL.pdb
+C:\Users\ohernandezpalacios\source\repos\260\ConsoleApp1\obj\Debug\net6.0\ref\GameDAL.dll

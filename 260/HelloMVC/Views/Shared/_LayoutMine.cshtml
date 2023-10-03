@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+    <title>
+		@ViewData["Title"]
+	</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/">HOME</a>
+				<a href="/Home/AboutMe">aboutMe</a>
+				<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutMe">About Me</a>
+			</nav>
+		</header>
+		<section>		
+			@RenderBody()
+		</section>
+		<footer>&copy;OPH</footer>
+	</body>
+</html>

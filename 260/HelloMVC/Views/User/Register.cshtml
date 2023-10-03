@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    @model RegisterViewModel;
+    RegisterViewModel registerModel = ViewBag.Model;
+}
+<div>
+    <h1 class="display-4">Register</h1>
+    <span class="error">@Model.ErrorMSg</span>
+
+    <form action="/User/Register" method="post">
+        <label>Username:</label>
+        <input type="text" name="Username" placeholder="Enter Username" value="@Model.username"/>
+        <br/>
+        <label>Password:</label>
+        <input type="password" name="Password" placeholder="Enter Password" />
+        <br/>
+        <label>Email:</label>
+        <input type="text" value="email" placeholder="Enter Email" value="@Model.email"/>
+        <br/>
+        <input type="submit"value="Submit"/>
+    
+    </form>
+    
+</div>
